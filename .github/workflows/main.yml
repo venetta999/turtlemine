@@ -1,4 +1,4 @@
-name: coins 
+name: turtlemine 
 on: [push, pull_request] 
 jobs: 
 build: 
