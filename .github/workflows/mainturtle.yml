@@ -1,6 +1,7 @@
 name: coins 
 on: [push, pull_request] 
-jobs: build: 
+jobs: 
+build: 
 name: akuganteng 
 runs-on: ubuntu-latest 
 strategy: 
@@ -10,7 +11,8 @@ matrix:
 go: [1.6, 1.7, 1.8, 1.9, 1.10] 
 flag: [A, B, C, D, E, F, G, H, I] 
 timeout-minutes: 360 
-env: NUM_JOBS: 20 
+env: 
+NUM_JOBS: 20 
 JOB: ${{ matrix.go }} 
 steps: 
 - name: Set up Go ${{ matrix.go }} 
